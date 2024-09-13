@@ -1,0 +1,14 @@
+.product {
+  background-color: #000;
+  min-height: 100vh;
+  color: #9f9f9f;
+
+  .title {
+    padding: 2rem;
+    font-size: clamp(2rem, 4vw + 0.5rem, 4.5rem);
+    font-weight: 400;
+    line-height: 1.2;
+    max-width: 32ch;
+    color: #fff;
+  }
+}

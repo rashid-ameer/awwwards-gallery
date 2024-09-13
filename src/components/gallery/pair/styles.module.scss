@@ -1,0 +1,43 @@
+.pair {
+  display: flex;
+  height: 52vw;
+
+  .item {
+    img {
+      width: 100%;
+      aspect-ratio: 3/2;
+      object-fit: cover;
+    }
+
+    .body {
+      padding: 1rem;
+
+      h3 {
+        color: #fff;
+        text-transform: uppercase;
+      }
+
+      time {
+        color: gray;
+      }
+    }
+
+    &:nth-child(1) {
+      width: 66.66%;
+    }
+    &:nth-child(2) {
+      width: 33.33%;
+    }
+  }
+
+  &:nth-child(even) {
+    .item {
+      &:nth-child(1) {
+        order: 2;
+      }
+      &:nth-child(2) {
+        order: 1;
+      }
+    }
+  }
+}
